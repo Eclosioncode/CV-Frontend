@@ -1,0 +1,394 @@
+        html {
+            scroll-behavior: smooth;
+        }
+                
+        #inicio {
+            height: 100vh;
+            background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/teatro.jpg");
+            background-size: cover;
+            background-position:center;
+        }
+        
+        #inicio .contenido header {
+            background-color: rgba(0, 0, 0, .8);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+        }
+        
+        #inicio .contenido header .contenido-header {
+            max-width: 1150px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        
+        #inicio .contenido header .contenido-header h1 {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Montserrat';
+            color: #ee10c9;
+        }
+        
+        #inicio .contenido header .contenido-header nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        #inicio .contenido header .contenido-header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 12px;
+            font-family: 'lato';
+            font-weight: 400;
+            transition: .5s;
+        }
+        
+        #inicio .contenido header .contenido-header nav ul li a:hover {
+            color: #ff5080;
+        }
+        
+        
+        #inicio .contenido header .contenido-header .seleccionado {
+            color: #ff5080;
+        }
+        /* icono de navegacion oculto */
+
+        #icono-nav {
+            color: #fff;
+            display: none;
+        }
+                
+        #inicio .presentacion {
+            display: flex;
+            font-family: 'lato';
+            justify-content: space-between;
+            max-width: 1150px;
+            margin: 30px auto;
+        }
+
+        #inicio .contenedor-foto {
+            max-width: 40%;
+            margin-right: 80px;
+            margin-top: 120px;
+            margin-left: 40px;
+        }
+        
+        #inicio .contenedor-foto img {
+            padding: 20px;
+            width: 75%;
+            border-radius: 20px;
+            background-color: #f3f3f3;
+        }
+        
+        #inicio .sobremi {
+            max-width: 50%;
+            align-self: auto;
+            margin-right: 20px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #inicio .titulo-seccion {
+            margin-top: 80px;
+            text-align: center;
+            color: #e3e3ec;
+            text-decoration-color: #d3d3d3;
+            text-decoration-thickness: 5px;
+        }
+        
+        #inicio .parrafo-sobremi {
+            margin-top: 40px;
+            text-justify: auto;
+            color: #e3e3ec;
+            font-size:large;
+            text-decoration-color: #d3d3d3;
+        }
+
+        #inicio .escondido {
+            display: none;
+            text-justify: auto;
+            color: #e3e3ec;
+            font-size:large;
+        }
+
+        #inicio .escondidooff {
+            display: block;
+            text-justify: auto;
+            color: #e3e3ec;
+            font-size:large;
+        }
+
+        #inicio .botonhide {
+            background-color: transparent;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            padding: 15px 15px;
+            font-size: 1.2em;
+            box-shadow: 0px 0px 10px 0px #dd94d1;
+            cursor: pointer;
+            }
+
+        #inicio .botonhide:hover {
+            box-shadow: none;
+            background-color: rgb(61, 52, 52);
+            color: #fff;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+        }
+
+
+        #inicio .descargamicv {
+
+            margin-top: 40px;
+            text-justify: auto;
+            color: #ee10c9;
+            font-size:large;
+            text-decoration: none;
+        }
+
+                
+        #habilidades {
+            padding: 100px 15px;
+            text-align: center;
+            font-family: 'lato';
+            background: url("img/habil.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #habilidades .titulo-seccion {
+            text-align: center;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #111135;
+            
+        }
+        
+        #habilidades .fila {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1150px;
+            margin: 30px auto;
+        }
+        
+        #habilidades .fila .habilidades {
+            max-width: 300px;
+            background-color: #d3d3d3;
+            padding: 30px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: .5s;
+        }
+        
+        #habilidades .fila .habilidades:hover {
+            box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+        }
+        
+        #habilidades .fila .habilidades .icono {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fdfbfb;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #habilidades .fila .habilidades h4 {
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+        
+                
+        #habilidades .fila .habilidades ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        
+        #habilidades .fila .habilidades ul li {
+            font-size: 20px;
+            font-style: italic;
+            justify-content: space-around;
+            color:#470514f3;;
+        }
+        /* parrafo habilidades */
+
+        #habilidades .fila .habilidades p {
+            font-size: 14px;
+            line-height: 22px;
+            font-style: italic;
+        }
+
+
+        #portfolio {
+            max-width: 1100px;
+            padding: 100px 0;
+            margin: auto;
+            font-family: 'lato';
+        }
+        
+        #portfolio .titulo-seccion {
+            text-align: center;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #111135;
+        }
+        
+        #portfolio .fila {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        
+        #portfolio .fila .proyecto {
+            max-width: 450px;
+            border: 1px solid #000;
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #portfolio .fila .proyecto img {
+            width: 100%;
+            height: 100%;
+            ;
+            filter: grayscale(1);
+            object-fit: cover;
+            transition: .5s;
+        }
+        
+        #portfolio .fila .proyecto:hover img {
+            filter: grayscale(0);
+        }
+        
+        #portfolio .fila .proyecto .info {
+            position: absolute;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ff5080;
+            width: 100%;
+            padding: 10px;
+            opacity: 0;
+            bottom: -40px;
+            transition: .5s;
+        }
+        
+        #portfolio .fila .proyecto:hover .info {
+            opacity: 1;
+            bottom: 0;
+        }
+
+                
+        #contacto {
+            background-color: #202020;
+            padding: 50px 0 100px 0;
+            color: #e6e6e6;
+            text-align: center;
+            font-family: 'lato';
+        }
+        #contacto .contenido-seccion{
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 10px;
+        }
+        #contacto .contenido-seccion h3{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        #contacto .contenido-seccion .fila{
+            display: flex;
+            justify-content: space-around;
+        }
+        #contacto .contenido-seccion .fila .col{
+            margin-top: 50px;
+        }
+        #contacto .contenido-seccion .fila .col h2{
+            color: #ff5080;
+        }
+        
+    
+                
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'lato';
+        }
+        
+        footer a {
+            justify-content: space-between;
+            text-decoration: none;
+            color: #fff;
+            display: inline-flex;
+            margin: 5px;
+            font-size: 30px;
+            padding: 10px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            nav {
+                display: none;
+            }
+            nav.responsive {
+                display: block;
+                background-color: rgba(0, 0, 0, .8);
+                width: 100%;
+                position: absolute;
+                top: 48px;
+                left: 0;
+                padding: 10px 0;
+            }
+            nav.responsive ul {
+                display: block !important;
+                text-align: center;
+            }
+            nav.responsive ul li {
+                margin: 5px 0;
+            }
+            #icono-nav {
+                display: block;
+            }
+            #inicio .contenido h1 {
+                font-size: 40px;
+            }
+            #inicio {
+                padding: 50px 0;
+                display: block;
+            }
+            #inicio .contenedor-foto {
+                max-width: 200px;
+                margin: auto;
+            }
+            #inicio .contenedor-foto img {
+                padding: 8px;
+            }
+            
+            #habilidades {
+                padding: 50px 15px;
+            }
+            #habilidades .fila {
+                display: block;
+            }
+            #habilidades .fila .habilidades {
+                margin: 10px auto;
+            }
+            
+            #portfolio {
+                padding: 50px 0;
+            }
+            #portfolio .fila {
+                display: block;
+            }
+            #portfolio .fila .proyecto {
+                margin: 10px auto;
+            }
+            
+        }

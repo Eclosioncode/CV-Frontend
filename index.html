@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="CV" content="Curriculum Vitae Frontend">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&family=Montserrat:ital,wght@0,400;1,500&display=swap" rel="stylesheet">  <title> Proyecto CV Argentina Programa </title>
+    <script src="https://kit.fontawesome.com/ddeaaf3aca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1> HIPOLITO PULIDO </h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="presentacion">
+            <div class="contenedor-foto">
+                    <img src="img/foto.jpg" alt="">
+            </div>
+            <div class="sobremi">
+                    <h1 class="titulo-seccion">Hola, soy Hipolito </h1>
+                    <p class="parrafo-sobremi">Bailarín y coreógrafo con 59 años de experiencia en el mundo artístico especializado en <em>Danzas Folclóricas</em> y con un máster en pedagogía de danza. <br> Me he desempeñado como profesor de baile en academias nacionales e internacionales, tales como Estudio de Danza Stylo y NYU Tisch Escuela de las Artes. 
+                    <br> Multiple ganador de competiciónes estatales y premiado personalmente como el mejor coreógrafo de la competencia. <p>
+                    
+                    <p class="escondido" id="oculto">Soy creativo; luego, existoso, la perspectiva del mundo y el lugar que ocupamos en él pueden modelarse a partir de la actitud creativa con que decidimos desarrollar nuestras fortalezas y talentos.<br> 
+                    </p> 
+                                        
+                    <button class="botonhide" id="botonoculto" onclick="botonoculto();">Lee más</button>
+                    <br>
+                    <br>
+                    <a class="descargamicv"  href="/pdf/cv.pdf" download> DESCARGA MI CV </a>
+            </div>
+                
+        </div>
+        
+    </section>
+    
+    <section id="habilidades">
+        <h3 class="titulo-seccion">Habilidades</h3>
+        <div class="fila">
+            <div class="habilidades">
+                <span class="icono"> <i class="fa-solid fa-icons fa-3x"></i></span>
+                <h4>Coreógrafo</h4>
+                <hr>
+                <ul >
+                    <li>Genio</li>
+                    <li> Lider</li>
+                    <li> Audáz</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus rem illum sunt, asperiores!</p>
+            </div>
+            <div class="habilidades">
+                <span class="icono"><i class="fa-solid fa-guitar fa-3x"></i></span>
+                <h4>Academia de Folcklore</h4>
+                <hr>
+                <ul >
+                    <li>Zamba</li>
+                    <li> Gato</li>
+                    <li> Cueca</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus rem illum sunt, asperiores!</p>
+            </div>
+            <div class="habilidades">
+                <span class="icono"><i class="fa-solid fa-person-running fa-3x"></i></span>
+                <h4>Director de Arte</h4>
+                <hr>
+                <ul >
+                    <li>Coordinación</li>
+                    <li> Ritmo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus rem illum sunt, asperiores!</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/danza1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Bailando</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/danza2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Produciendo</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/danza3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Dirigiendo</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    
+    <section id="contacto">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <h3>Ponte en contacto y bailemos!!</h3>
+
+            <div class="fila">
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-phone"></i> Teléfono
+                    </h2>
+                    <span class="info-contacto"> +54 - 2644555555</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-envelope"></i> Correo
+                    </h2>
+                    <span class="info-contacto">hipulido@charangomail.com.ar</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-globe"></i> Página Web
+                    </h2>
+                    <span class="info-contacto">HI-Polito.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <h2 class="titulo-seccion">Mis Redes</h2>
+        <div >
+            <a href="www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="www.faceboo.com.ar"><i class="fa-brands fa-facebook"></i></a>
+            <a href="wwww.instagram.com"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
