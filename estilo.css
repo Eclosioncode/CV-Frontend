@@ -7,8 +7,9 @@
             background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/teatro.jpg");
             background-size: cover;
             background-position:center;
+            display: flex;
         }
-        
+
         #inicio .contenido header {
             background-color: rgba(0, 0, 0, .8);
             position: fixed;
@@ -23,7 +24,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
+            padding: 10px auto;
         }
         
         #inicio .contenido header .contenido-header h1 {
@@ -44,7 +45,7 @@
             color: #fff;
             margin: 0 12px;
             font-family: 'lato';
-            font-weight: 400;
+            font-weight: 350;
             transition: .5s;
         }
         
@@ -67,34 +68,37 @@
             display: flex;
             font-family: 'lato';
             justify-content: space-between;
-            max-width: 1150px;
+            max-width: 1150px;  
             margin: 30px auto;
         }
 
         #inicio .contenedor-foto {
-            max-width: 40%;
-            margin-right: 80px;
-            margin-top: 120px;
-            margin-left: 40px;
+            width: 40%;
+            align-self: center;  
+            margin-top: 80px;
+            margin-bottom: 20px;  
+            margin-left: 20px;                     
         }
-        
+
         #inicio .contenedor-foto img {
             padding: 20px;
-            width: 75%;
+            width: 60%;
             border-radius: 20px;
             background-color: #f3f3f3;
+            max-width: 90%;
         }
         
         #inicio .sobremi {
-            max-width: 50%;
+            width: 60%;
             align-self: auto;
             margin-right: 20px;
             margin-top: 30px;
             margin-left: 20px;
+            position: relative;
         }
 
         #inicio .titulo-seccion {
-            margin-top: 80px;
+            margin-top: 30px;
             text-align: center;
             color: #e3e3ec;
             text-decoration-color: #d3d3d3;
@@ -139,16 +143,6 @@
             background-color: rgb(61, 52, 52);
             color: #fff;
             transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
-        }
-
-
-        #inicio .descargamicv {
-
-            margin-top: 40px;
-            text-justify: auto;
-            color: #ee10c9;
-            font-size:large;
-            text-decoration: none;
         }
 
                 
@@ -302,6 +296,15 @@
             text-transform: uppercase;
             font-size: 30px;
         }
+
+        #contacto .descargamicv {
+            margin-top: 40px;
+            text-justify: auto;
+            color: #ee10c9;
+            font-size:large;
+            text-decoration: none;
+        }
+
         #contacto .contenido-seccion .fila{
             display: flex;
             justify-content: space-around;
@@ -342,7 +345,7 @@
                 background-color: rgba(0, 0, 0, .8);
                 width: 100%;
                 position: absolute;
-                top: 48px;
+                top: 40px;
                 left: 0;
                 padding: 10px 0;
             }
@@ -356,21 +359,50 @@
             #icono-nav {
                 display: block;
             }
-            #inicio .contenido h1 {
-                font-size: 40px;
+            #inicio .contenido header .contenido-header h1 {
+                font-size: 20px;
             }
             #inicio {
-                padding: 50px 0;
+                padding: 40px 0;
                 display: block;
             }
-            #inicio .contenedor-foto {
-                max-width: 200px;
-                margin: auto;
+
+            #inicio .presentacion {
+                display: block;               
             }
+
+            #inicio .contenedor-foto {
+                width: 55%;
+                margin: 20px auto;
+            }
+
             #inicio .contenedor-foto img {
                 padding: 8px;
             }
             
+            #inicio .sobremi {
+                display: block;
+                margin: 10px auto;
+                width: 100%;
+            }
+            
+            #inicio .parrafo-sobremi {
+                text-justify: auto;
+                font-size:small;
+                padding: 8px;
+            }
+        
+            #inicio .escondidooff {
+                display: block;
+                text-justify: auto;
+                font-size:small;
+                padding: 8px;
+            }
+            
+            #inicio .titulo-seccion {
+            font-size: 15px; 
+            }
+
             #habilidades {
                 padding: 50px 15px;
             }
